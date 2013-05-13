@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9e29621a-9511-4dab-8cc7-64f40873f26b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51879/IntegratedEmail.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IntegratedEmail.xsd" MetadataType="Schema" ID="6f629776-4ed6-42be-8959-4889afb299ff" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?xsd=xsd2" />
+    <MetadataFile FileName="IntegratedEmail.wsdl" MetadataType="Wsdl" ID="d17d0612-bae8-4466-aaa3-e885476dfe64" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?wsdl" />
+    <MetadataFile FileName="IntegratedEmail1.xsd" MetadataType="Schema" ID="7a784a9f-9584-44a8-8b60-9bdadb434e5a" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?xsd=xsd6" />
+    <MetadataFile FileName="IntegratedEmail2.xsd" MetadataType="Schema" ID="868d0cf9-d396-49e2-8567-babb837ddd55" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?xsd=xsd1" />
+    <MetadataFile FileName="IntegratedEmail.disco" MetadataType="Disco" ID="332f3811-6524-40e7-81aa-41905d647ffc" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?disco" />
+    <MetadataFile FileName="IntegratedEmail3.xsd" MetadataType="Schema" ID="d15350e6-05ec-4365-9024-372f4cfb7584" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?xsd=xsd0" />
+    <MetadataFile FileName="IntegratedEmail4.xsd" MetadataType="Schema" ID="2defc91b-9fa7-4281-b995-06e5e9723dd8" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?xsd=xsd4" />
+    <MetadataFile FileName="IntegratedEmail5.xsd" MetadataType="Schema" ID="ba020693-d47e-49cb-9be7-69c00f6326c5" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?xsd=xsd3" />
+    <MetadataFile FileName="IntegratedEmail6.xsd" MetadataType="Schema" ID="46e18dcf-b0ce-4c43-aa39-d5e732dadf33" SourceId="1" SourceUrl="http://localhost:51879/IntegratedEmail.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

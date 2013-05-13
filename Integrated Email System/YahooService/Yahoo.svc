@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="YahooService.Yahoo" CodeBehind="Yahoo.svc.cs" %>
