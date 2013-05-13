@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b6b96bf3-4cd4-4c69-8007-4b33961df65c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51880/Hotmail.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Hotmail.xsd" MetadataType="Schema" ID="a393f517-a37a-40a9-8d2f-9e9b2e4326b1" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?xsd=xsd6" />
+    <MetadataFile FileName="Hotmail1.xsd" MetadataType="Schema" ID="7361cd62-59b8-45f2-91ad-e6fef5afb90f" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?xsd=xsd1" />
+    <MetadataFile FileName="Hotmail.wsdl" MetadataType="Wsdl" ID="335af9a2-ae22-44c7-99de-b6303fd71bbd" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?wsdl" />
+    <MetadataFile FileName="Hotmail2.xsd" MetadataType="Schema" ID="839d0f7b-5e27-418b-af34-44911c05779b" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?xsd=xsd3" />
+    <MetadataFile FileName="Hotmail3.xsd" MetadataType="Schema" ID="ceed81f0-d887-4531-b74e-eb4073331a71" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?xsd=xsd0" />
+    <MetadataFile FileName="Hotmail4.xsd" MetadataType="Schema" ID="755876d2-fa25-418d-a906-c640d31a6e36" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?xsd=xsd2" />
+    <MetadataFile FileName="Hotmail.disco" MetadataType="Disco" ID="b5923655-0dae-4b4a-8dc3-280aea03c497" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?disco" />
+    <MetadataFile FileName="Hotmail5.xsd" MetadataType="Schema" ID="de416b97-c6b0-4272-b0ac-65739f8f4dd9" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?xsd=xsd4" />
+    <MetadataFile FileName="Hotmail6.xsd" MetadataType="Schema" ID="e3d12dec-aebc-4b3d-badf-5cd9d4554507" SourceId="1" SourceUrl="http://localhost:51880/Hotmail.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

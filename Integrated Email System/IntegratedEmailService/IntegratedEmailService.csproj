@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66A371E9-F6BC-4514-9B6C-08FBD0C5C0CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntegratedEmailService</RootNamespace>
+    <AssemblyName>IntegratedEmailService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IntegratedEmail.svc" />
+    <Content Include="Properties\DataSources\IntegratedEmailService.Entity.Contact.datasource" />
+    <Content Include="Properties\DataSources\IntegratedEmailService.Entity.Email.datasource" />
+    <None Include="Service References\GService\Gmail.disco" />
+    <None Include="Service References\GService\configuration91.svcinfo" />
+    <None Include="Service References\GService\configuration.svcinfo" />
+    <None Include="Service References\GService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\HService\Hotmail.disco" />
+    <None Include="Service References\HService\configuration91.svcinfo" />
+    <None Include="Service References\HService\configuration.svcinfo" />
+    <None Include="Service References\HService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\YService\Yahoo.disco" />
+    <None Include="Service References\YService\configuration91.svcinfo" />
+    <None Include="Service References\YService\configuration.svcinfo" />
+    <None Include="Service References\YService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config" />
+    <None Include="Service References\HService\Hotmail5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HService\Hotmail6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\YService\Yahoo.wsdl" />
+    <None Include="Service References\YService\Yahoo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\YService\Yahoo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\YService\Yahoo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\YService\Yahoo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\YService\Yahoo4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\YService\Yahoo5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\YService\Yahoo6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IntegratedEmail.svc.cs">
+      <DependentUpon>IntegratedEmail.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IIntegratedEmail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProviderFactory.cs" />
+    <Compile Include="Service References\GService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\YService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GService\Gmail.wsdl" />
+    <None Include="Service References\GService\Gmail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GService\Gmail1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GService\Gmail2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GService\Gmail3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GService\Gmail4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GService\Gmail5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GService\Gmail6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HService\Hotmail.wsdl" />
+    <None Include="Service References\HService\Hotmail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HService\Hotmail1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HService\Hotmail2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HService\Hotmail3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HService\Hotmail4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntegratedEmailService.Entity\IntegratedEmailService.Entity.csproj">
+      <Project>{b0ea1128-d122-4d83-a2a3-7a191e10edb5}</Project>
+      <Name>IntegratedEmailService.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GService\" />
+    <WCFMetadataStorage Include="Service References\HService\" />
+    <WCFMetadataStorage Include="Service References\YService\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51879</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2b6322d0-9850-474a-a998-a3943a05c154" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51881/Gmail.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Gmail.wsdl" MetadataType="Wsdl" ID="35dfa57b-9e65-4dae-89fe-0de9c7cbe3bf" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?wsdl" />
+    <MetadataFile FileName="Gmail.xsd" MetadataType="Schema" ID="a9f61e86-a730-4dbb-bdfe-f1482a5890ca" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?xsd=xsd6" />
+    <MetadataFile FileName="Gmail1.xsd" MetadataType="Schema" ID="50a94c47-80c5-4a27-8695-1f6e5a16cf4c" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?xsd=xsd4" />
+    <MetadataFile FileName="Gmail2.xsd" MetadataType="Schema" ID="e7d3c03d-30b3-4787-bed4-fa0accbc5267" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?xsd=xsd5" />
+    <MetadataFile FileName="Gmail3.xsd" MetadataType="Schema" ID="a4728077-18a7-499c-9afe-6ccfe3bf27af" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?xsd=xsd2" />
+    <MetadataFile FileName="Gmail4.xsd" MetadataType="Schema" ID="2b3ba58c-386b-45b4-b6fb-9d640098c488" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?xsd=xsd3" />
+    <MetadataFile FileName="Gmail5.xsd" MetadataType="Schema" ID="6363e4da-11f5-42b9-a300-6053b73faee7" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?xsd=xsd0" />
+    <MetadataFile FileName="Gmail6.xsd" MetadataType="Schema" ID="a00b21c4-e6bd-43bd-931b-01336434b1e8" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?xsd=xsd1" />
+    <MetadataFile FileName="Gmail.disco" MetadataType="Disco" ID="8ed7f433-00b0-4906-8ed8-d240488fc8e4" SourceId="1" SourceUrl="http://localhost:51881/Gmail.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
